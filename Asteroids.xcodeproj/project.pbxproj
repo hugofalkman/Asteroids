@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		B1883C741E9B59790036885D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1883C731E9B59790036885D /* AppDelegate.swift */; };
-		B1883C761E9B59790036885D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1883C751E9B59790036885D /* ViewController.swift */; };
+		B1883C761E9B59790036885D /* AsteroidsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1883C751E9B59790036885D /* AsteroidsViewController.swift */; };
 		B1883C791E9B59790036885D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1883C771E9B59790036885D /* Main.storyboard */; };
 		B1883C7B1E9B59790036885D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1883C7A1E9B59790036885D /* Assets.xcassets */; };
 		B1883C7E1E9B59790036885D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1883C7C1E9B59790036885D /* LaunchScreen.storyboard */; };
+		B1883C8A1E9B5BF30036885D /* AsteroidFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1883C861E9B5BF30036885D /* AsteroidFieldView.swift */; };
+		B1883C8B1E9B5BF30036885D /* AsteroidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1883C871E9B5BF30036885D /* AsteroidView.swift */; };
+		B1883C8C1E9B5BF30036885D /* CoreGraphicsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1883C881E9B5BF30036885D /* CoreGraphicsExtensions.swift */; };
+		B1883C8D1E9B5BF30036885D /* SpaceshipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1883C891E9B5BF30036885D /* SpaceshipView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B1883C701E9B59790036885D /* Asteroids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asteroids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1883C731E9B59790036885D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B1883C751E9B59790036885D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B1883C751E9B59790036885D /* AsteroidsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidsViewController.swift; sourceTree = "<group>"; };
 		B1883C781E9B59790036885D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B1883C7A1E9B59790036885D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1883C7D1E9B59790036885D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1883C7F1E9B59790036885D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1883C861E9B5BF30036885D /* AsteroidFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsteroidFieldView.swift; sourceTree = "<group>"; };
+		B1883C871E9B5BF30036885D /* AsteroidView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsteroidView.swift; sourceTree = "<group>"; };
+		B1883C881E9B5BF30036885D /* CoreGraphicsExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreGraphicsExtensions.swift; sourceTree = "<group>"; };
+		B1883C891E9B5BF30036885D /* SpaceshipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceshipView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,26 @@
 		B1883C721E9B59790036885D /* Asteroids */ = {
 			isa = PBXGroup;
 			children = (
-				B1883C731E9B59790036885D /* AppDelegate.swift */,
-				B1883C751E9B59790036885D /* ViewController.swift */,
 				B1883C771E9B59790036885D /* Main.storyboard */,
+				B1883C751E9B59790036885D /* AsteroidsViewController.swift */,
+				B1883C861E9B5BF30036885D /* AsteroidFieldView.swift */,
 				B1883C7A1E9B59790036885D /* Assets.xcassets */,
+				B1883C851E9B59C90036885D /* Supporting Files */,
+			);
+			path = Asteroids;
+			sourceTree = "<group>";
+		};
+		B1883C851E9B59C90036885D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1883C871E9B5BF30036885D /* AsteroidView.swift */,
+				B1883C881E9B5BF30036885D /* CoreGraphicsExtensions.swift */,
+				B1883C891E9B5BF30036885D /* SpaceshipView.swift */,
+				B1883C731E9B59790036885D /* AppDelegate.swift */,
 				B1883C7C1E9B59790036885D /* LaunchScreen.storyboard */,
 				B1883C7F1E9B59790036885D /* Info.plist */,
 			);
-			path = Asteroids;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1883C761E9B59790036885D /* ViewController.swift in Sources */,
+				B1883C761E9B59790036885D /* AsteroidsViewController.swift in Sources */,
 				B1883C741E9B59790036885D /* AppDelegate.swift in Sources */,
+				B1883C8A1E9B5BF30036885D /* AsteroidFieldView.swift in Sources */,
+				B1883C8C1E9B5BF30036885D /* CoreGraphicsExtensions.swift in Sources */,
+				B1883C8B1E9B5BF30036885D /* AsteroidView.swift in Sources */,
+				B1883C8D1E9B5BF30036885D /* SpaceshipView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
