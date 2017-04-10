@@ -11,14 +11,14 @@ import UIKit
 class AsteroidFieldView: UIView
 {
     // apply this behavior to all asteroids
-//    var asteroidBehavior: AsteroidBehavior? {
-//        didSet {
-//            for asteroid in asteroids {
-//                oldValue?.removeAsteroid(asteroid)
-//                asteroidBehavior?.addAsteroid(asteroid)
-//            }
-//        }
-//    }
+    var asteroidBehavior: AsteroidBehavior? {
+        didSet {
+            for asteroid in asteroids {
+                oldValue?.removeAsteroid(asteroid)
+                asteroidBehavior?.addAsteroid(asteroid)
+            }
+        }
+    }
     
     // get all of our asteroids
     // by converting our subviews array
@@ -41,7 +41,7 @@ class AsteroidFieldView: UIView
                 asteroid.frame.origin = bounds.randomPoint
             } while !exclusionZone.isEmpty && asteroid.frame.intersects(exclusionZone)
             addSubview(asteroid)
-//            asteroidBehavior?.addAsteroid(asteroid)
+            asteroidBehavior?.addAsteroid(asteroid)
         }
     }
 }
